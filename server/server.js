@@ -50,9 +50,9 @@ app.get('/', function(req, res) {
 })
 
 app.get('/data', function(req, res) {
-  // User.findOne({user: 'Gerst'}, function(err, doc) {
-  //   return res.json(doc)
-  // }) //查找数据
+  User.findOne({user: 'Gerst'}, function(err, doc) {
+    return res.json(doc)
+  }) //查找数据
 })
 
 // app.get('/delete', function(req, res) {

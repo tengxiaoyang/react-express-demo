@@ -21,13 +21,13 @@ function Qibinglian() {
 )
 
 class Dashboard extends React.Component {
-  constructor(props) {
-    super(props)
-  }
+  // constructor(props) {
+  //   super(props)
+  // }
   render() {
-    console.log(this.props)
+    // console.log(this.props)
     const match = this.props.match //url是实际的路由，path是定义的路由，里面可能有变量
-    console.log(match)
+    // console.log(match)
     const redirectToLogin = <Redirect to='/login'></Redirect>
     const app = (
       <div>

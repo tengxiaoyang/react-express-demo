@@ -6,7 +6,6 @@ import { Provider } from 'react-redux'
 import { 
   BrowserRouter, 
   Route, 
-  Link, 
   Redirect,
   Switch
 } from 'react-router-dom'
@@ -15,6 +14,7 @@ import {
 import reducer from './reducer' //合并所有reducer
 import Auth from './Auth'
 import Dashboard from './Dashboard'
+import './config'
 
 // 新建Store，并且以组件属性的形式传入组件里：
 const store = createStore(reducer, compose(
@@ -22,7 +22,7 @@ const store = createStore(reducer, compose(
   window.devToolsExtension ? window.devToolsExtension() : () => {}
 )) //compose可以组合函数
 
-console.log(store.getState())
+// console.log(store.getState())
 
 // 页面设计：
 // 登录
